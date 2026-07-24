@@ -39,11 +39,10 @@ python3 -m http.server 8000
 
 ## Amazonリンクの差し替え場所
 
-`matcha-station.html` にある以下の3文字列を、有効なAmazon USのアフィリエイトURLに置換します。
+`matcha-station.html` のMatcha Setには有効なAmazon USアフィリエイトURLを設定済みです。以下の2文字列は、商品選定後に有効なAmazon USのアフィリエイトURLへ置換します。
 
 | プレースホルダー | 対象 |
 |---|---|
-| `AMAZON_LINK_MATCHA_SET` | Japanese Matcha Tea Set |
 | `AMAZON_LINK_MATCHA_POWDER` | Ceremonial Grade Matcha Powder |
 | `AMAZON_LINK_MATCHA_ORGANIZER` | Matcha Organizer or Storage Tray |
 
