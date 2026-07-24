@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bugm79-sketch.github.io/amazon-guide/sitemap.xml
