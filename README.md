@@ -39,11 +39,10 @@ python3 -m http.server 8000
 
 ## Amazonリンクの差し替え場所
 
-`matcha-station.html` のMatcha Setには有効なAmazon USアフィリエイトURLを設定済みです。以下の2文字列は、商品選定後に有効なAmazon USのアフィリエイトURLへ置換します。
+`matcha-station.html` のMatcha SetとMatcha Powderには有効なAmazon USアフィリエイトURLを設定済みです。以下の文字列は、商品選定後に有効なAmazon USのアフィリエイトURLへ置換します。
 
 | プレースホルダー | 対象 |
 |---|---|
-| `AMAZON_LINK_MATCHA_POWDER` | Ceremonial Grade Matcha Powder |
 | `AMAZON_LINK_MATCHA_ORGANIZER` | Matcha Organizer or Storage Tray |
 
 URLの確定後は、該当する `<a>` から `aria-disabled="true"` と `data-amazon-placeholder` を削除し、直後の「Amazon link will be added...」という注記も削除してください。未設定中は `script.js` がクリック移動を防ぎます。
