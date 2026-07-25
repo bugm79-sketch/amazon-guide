@@ -72,8 +72,27 @@ p { margin: 0 0 1.15em; }
 .featured-card img { width: 100%; height: 100%; object-fit: cover; }
 .secondary-button { border-color: var(--matcha-dark); background: transparent; color: var(--matcha-dark); }
 .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
-.category { min-height: 112px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+.category { display: block; min-height: 112px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
 .category small { display: block; color: var(--muted); }
+.category-available {
+  cursor: pointer;
+  border-color: rgba(71, 99, 74, .35);
+  background: linear-gradient(135deg, var(--paper), #f0f5ec);
+  box-shadow: 0 8px 22px rgba(45, 68, 50, .11);
+  color: var(--matcha-dark);
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.category-available small { color: var(--matcha); font-weight: 750; }
+.category-available:hover {
+  transform: translateY(-4px);
+  border-color: var(--matcha);
+  box-shadow: 0 14px 30px rgba(45, 68, 50, .16);
+  color: var(--matcha-dark);
+}
+.category-available:focus-visible { outline: 3px solid var(--wood); outline-offset: 4px; }
+.category-coming-soon { cursor: default; background: rgba(255, 253, 248, .62); color: #616a63; box-shadow: none; }
+.category-coming-soon small { display: inline-block; margin-top: 4px; padding: 2px 9px; border-radius: 999px; background: #eceee9; font-size: .78rem; }
 .product { display: grid; grid-template-columns: .85fr 1.15fr; }
 .product img { width: 100%; height: 100%; min-height: 360px; object-fit: cover; }
 .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 22px 0; }
@@ -117,4 +136,7 @@ p { margin: 0 0 1.15em; }
   .card-grid, .category-grid, .facts { grid-template-columns: 1fr; }
   .button { width: 100%; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .category-available { transition: none; }
+}
