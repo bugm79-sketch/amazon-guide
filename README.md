@@ -21,10 +21,12 @@
 └── assets/
     ├── favicon.svg
     └── images/
-        ├── matcha-hero.svg
-        ├── matcha-set.svg
-        ├── matcha-powder.svg
-        └── matcha-organizer.svg
+        ├── quiet-matcha-morning-hero.webp
+        ├── matcha-starter-set-lifestyle.webp
+        ├── ceremonial-matcha-preparation.webp
+        ├── organized-matcha-station.webp
+        ├── matcha-latte-milk-frother.webp
+        └── complete-matcha-station-essentials.webp
 ```
 
 ## ローカル確認方法
