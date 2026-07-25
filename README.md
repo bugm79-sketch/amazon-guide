@@ -25,7 +25,7 @@
         ├── matcha-starter-set-lifestyle.webp
         ├── ceremonial-matcha-preparation.webp
         ├── organized-matcha-station.webp
-        ├── matcha-latte-milk-frother.webp
+        ├── zulay-kitchen-matcha-latte-frother.webp
         └── complete-matcha-station-essentials.webp
 ```
 
