@@ -121,6 +121,23 @@ p { margin: 0 0 1.15em; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
 .tiny { font-size: .82rem; color: var(--muted); }
 .compact-disclosure p:last-child { margin-bottom: 0; }
+.breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 22px; color: var(--muted); font-size: .84rem; }
+.stationery-roadmap { width: min(900px, 100%); margin: 0 auto; padding: 0; list-style: none; }
+.roadmap-step {
+  position: relative; display: grid; grid-template-columns: 84px 1fr; gap: clamp(20px, 4vw, 42px);
+  margin-bottom: 58px; padding: clamp(26px, 5vw, 48px); border: 1px solid var(--line);
+  border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow);
+}
+.roadmap-step:not(:last-child)::after { position: absolute; bottom: -51px; left: 50%; content: "↓"; color: var(--matcha); font-size: 2rem; font-weight: 800; transform: translateX(-50%); }
+.roadmap-step h2 { max-width: 19ch; font-size: clamp(1.75rem, 3.5vw, 2.65rem); }
+.roadmap-step h2 a { text-decoration-thickness: .06em; text-decoration-color: rgba(71, 99, 74, .3); }
+.step-marker { display: grid; width: 76px; height: 76px; place-content: center; border-radius: 50%; background: var(--matcha); color: white; text-align: center; line-height: 1; }
+.step-marker small { font-size: .65rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.step-marker strong { margin-top: 4px; font-family: Georgia, serif; font-size: 2rem; }
+.roadmap-link { font-weight: 800; }
+.coming-soon-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.coming-soon-grid span { padding: 18px 14px; border: 1px solid rgba(71, 99, 74, .2); border-radius: 999px; background: rgba(255, 253, 248, .78); color: var(--matcha-dark); font-weight: 750; text-align: center; }
+.course-closing { padding: clamp(28px, 6vw, 58px); border-left: 6px solid var(--matcha); background: var(--paper); }
 .experience-grid, .fit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(30px, 7vw, 80px); align-items: center; }
 .comparison-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
 .comparison-table { width: 100%; min-width: 680px; border-collapse: collapse; text-align: left; }
@@ -146,6 +163,7 @@ p { margin: 0 0 1.15em; }
   .hero-copy { order: 1; }
   .hero-art { order: 2; border-radius: 100px 100px 22px 22px; }
   .card-grid, .category-grid, .use-grid { grid-template-columns: 1fr 1fr; }
+  .coming-soon-grid { grid-template-columns: repeat(2, 1fr); }
   .product img { min-height: 260px; }
   .summary-photo > img { min-height: 0; aspect-ratio: 3 / 2; }
 }
@@ -154,6 +172,10 @@ p { margin: 0 0 1.15em; }
   .container, .narrow { width: min(100% - 28px, 1160px); }
   .site-header .container, .site-footer .footer-row { align-items: flex-start; flex-direction: column; }
   .card-grid, .category-grid, .facts, .use-grid { grid-template-columns: 1fr; }
+  .roadmap-step { grid-template-columns: 1fr; margin-bottom: 52px; padding: 24px 20px; }
+  .step-marker { width: 62px; height: 62px; }
+  .coming-soon-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .coming-soon-grid span { padding: 13px 8px; font-size: .9rem; }
   .button { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
