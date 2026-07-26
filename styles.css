@@ -99,6 +99,7 @@ p { margin: 0 0 1.15em; }
 .facts div { padding-top: 14px; border-top: 1px solid var(--line); }
 .facts strong { display: block; color: var(--matcha-dark); }
 .style-grid, .routine { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(30px, 7vw, 80px); align-items: center; }
+.style-grid > *, .routine > *, .experience-grid > *, .fit-grid > * { min-width: 0; }
 .lifestyle-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 .summary-photo { display: grid; grid-template-columns: 1.25fr .75fr; overflow: hidden; border-radius: var(--radius); background: var(--cream); box-shadow: var(--shadow); }
 .summary-photo > img { width: 100%; height: 100%; min-height: 440px; object-fit: cover; }
